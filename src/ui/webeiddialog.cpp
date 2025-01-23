@@ -92,16 +92,17 @@ WebEidDialog::WebEidDialog(QWidget* parent) : WebEidUI(parent), ui(new Private)
     ui->langButton = new QToolButton(this);
     ui->langButton->setObjectName("langButton");
     static const std::vector<std::pair<QString, QString>> LANG_LIST {
-        {QStringLiteral("et"), QStringLiteral("Eesti")},
-        {QStringLiteral("en"), QStringLiteral("English")},
-        {QStringLiteral("ru"), QStringLiteral("Русский")},
-        {QStringLiteral("fi"), QStringLiteral("Suomi")},
-        {QStringLiteral("hr"), QStringLiteral("Hrvatska")},
-        {QStringLiteral("de"), QStringLiteral("Deutsch")},
-        {QStringLiteral("fr"), QStringLiteral("Française")},
-        {QStringLiteral("nl"), QStringLiteral("Nederlands")},
-        {QStringLiteral("cs"), QStringLiteral("Čeština")},
-        {QStringLiteral("sk"), QStringLiteral("Slovenština")}};
+        // {QStringLiteral("et"), QStringLiteral("Eesti")},
+        {QStringLiteral("en"), QStringLiteral("English")}
+        // {QStringLiteral("ru"), QStringLiteral("Русский")},
+        // {QStringLiteral("fi"), QStringLiteral("Suomi")},
+        // {QStringLiteral("hr"), QStringLiteral("Hrvatska")},
+        // {QStringLiteral("de"), QStringLiteral("Deutsch")},
+        // {QStringLiteral("fr"), QStringLiteral("Française")},
+        // {QStringLiteral("nl"), QStringLiteral("Nederlands")},
+        // {QStringLiteral("cs"), QStringLiteral("Čeština")},
+        // {QStringLiteral("sk"), QStringLiteral("Slovenština")}
+        };
     ui->langButton->setText(tr("EN", "Active language"));
     if (auto i = std::find_if(LANG_LIST.cbegin(), LANG_LIST.cend(),
                               [lang = ui->langButton->text().toLower()](const auto& elem) {

@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string notr="true">Web eID</string>
+   <string notr="true">NCATS eID</string>
   </property>
   <property name="styleSheet">
    <string notr="true">QWidget {
@@ -758,7 +758,7 @@ height: 24px;
             <enum>Qt::TabFocus</enum>
            </property>
            <property name="text">
-            <string>About Web eID</string>
+            <string>About NCATS eID</string>
            </property>
           </widget>
          </item>
@@ -786,7 +786,7 @@ height: 24px;
              <enum>Qt::TabFocus</enum>
             </property>
             <property name="text">
-             <string>Web eID extension is disabled. The extension must be enabled in the web browser to authenticate and sign with an ID-card.</string>
+             <string>NCATS eID extension is disabled. The extension must be enabled in the web browser to authenticate and sign with an ID-card.</string>
             </property>
             <property name="wordWrap">
              <bool>true</bool>
